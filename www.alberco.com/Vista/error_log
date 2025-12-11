@@ -1,0 +1,616 @@
+[09-Dec-2025 16:12:20 UTC] === INICIO init.php ===
+[09-Dec-2025 16:12:20 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:12:20 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:12:20 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:13:17 UTC] === INICIO init.php ===
+[09-Dec-2025 16:13:17 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:13:17 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:13:17 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:13:18 UTC] === INICIO init.php ===
+[09-Dec-2025 16:13:18 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:13:18 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:13:18 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:13:23 UTC] === INICIO init.php ===
+[09-Dec-2025 16:13:23 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:13:23 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:13:23 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:13:23 UTC] === INICIO init.php ===
+[09-Dec-2025 16:13:23 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:13:23 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:13:23 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:13:23 UTC] === INICIO init.php ===
+[09-Dec-2025 16:13:23 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:13:23 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:13:23 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:13:26 UTC] === INICIO init.php ===
+[09-Dec-2025 16:13:26 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:13:26 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:13:26 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:13:31 UTC] === INICIO init.php ===
+[09-Dec-2025 16:13:31 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:13:31 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:13:31 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:13:31 UTC] === INICIO init.php ===
+[09-Dec-2025 16:13:31 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:13:31 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:13:31 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:13:45 UTC] === INICIO procesar_pedido_directo.php ===
+[09-Dec-2025 16:13:45 UTC] Método HTTP: POST
+[09-Dec-2025 16:13:45 UTC] IP Cliente: 190.232.110.143
+[09-Dec-2025 16:13:45 UTC] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+[09-Dec-2025 16:13:45 UTC] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+[09-Dec-2025 16:13:45 UTC] ✓ Conexión a BD exitosa
+[09-Dec-2025 16:13:45 UTC] Validando tabla tb_estados...
+[09-Dec-2025 16:13:45 UTC] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+[09-Dec-2025 16:13:45 UTC] Raw input recibido (primeros 500 chars)
+[09-Dec-2025 16:13:45 UTC] ✓ JSON decodificado correctamente
+[09-Dec-2025 16:13:45 UTC] Cliente: Diego, Tel: 926992202, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: Casa roja
+[09-Dec-2025 16:13:45 UTC] Tipo pedido: delivery
+[09-Dec-2025 16:13:45 UTC] Productos: 1
+[09-Dec-2025 16:13:45 UTC] ✓ Cliente existente encontrado
+[09-Dec-2025 16:13:45 UTC] === INICIANDO TRANSACCIÓN ===
+[09-Dec-2025 16:13:45 UTC] ✓ Número de pedido generado: PED-2025-000011
+[09-Dec-2025 16:13:45 UTC] ✓ Método de pago seleccionado: yape
+[09-Dec-2025 16:13:45 UTC] ✓ Validaciones finales
+[09-Dec-2025 16:13:45 UTC] ✓ Pedido creado en BD
+[09-Dec-2025 16:13:45 UTC] ✓ Método de pago mapeado
+[09-Dec-2025 16:13:45 UTC] ✓ Venta creada (pendiente)
+[09-Dec-2025 16:13:45 UTC] ✓ Detalles de venta insertados
+[09-Dec-2025 16:13:45 UTC] ✓ Pedido vinculado con venta
+[09-Dec-2025 16:13:45 UTC] ✓ Detalles del pedido insertados y stock actualizado
+[09-Dec-2025 16:13:45 UTC] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+[09-Dec-2025 16:13:45 UTC] === FIN procesar_pedido_directo.php ===
+[09-Dec-2025 16:14:21 UTC] === INICIO init.php ===
+[09-Dec-2025 16:14:21 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:14:21 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:14:21 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:14:25 UTC] === INICIO init.php ===
+[09-Dec-2025 16:14:25 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:14:25 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:14:25 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:14:38 UTC] === INICIO init.php ===
+[09-Dec-2025 16:14:38 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:14:38 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:14:38 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:14:38 UTC] === INICIO init.php ===
+[09-Dec-2025 16:14:38 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:14:38 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:14:38 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:14:48 UTC] === INICIO procesar_pedido_directo.php ===
+[09-Dec-2025 16:14:48 UTC] Método HTTP: POST
+[09-Dec-2025 16:14:48 UTC] IP Cliente: 190.232.110.143
+[09-Dec-2025 16:14:48 UTC] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+[09-Dec-2025 16:14:48 UTC] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+[09-Dec-2025 16:14:48 UTC] ✓ Conexión a BD exitosa
+[09-Dec-2025 16:14:48 UTC] Validando tabla tb_estados...
+[09-Dec-2025 16:14:48 UTC] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+[09-Dec-2025 16:14:48 UTC] Raw input recibido (primeros 500 chars)
+[09-Dec-2025 16:14:48 UTC] ✓ JSON decodificado correctamente
+[09-Dec-2025 16:14:48 UTC] Cliente: Diego, Tel: 926992202, Dir: 
+[09-Dec-2025 16:14:48 UTC] Tipo pedido: mesa
+[09-Dec-2025 16:14:48 UTC] Productos: 2
+[09-Dec-2025 16:14:48 UTC] ✓ Cliente existente encontrado
+[09-Dec-2025 16:14:48 UTC] === INICIANDO TRANSACCIÓN ===
+[09-Dec-2025 16:14:48 UTC] ✓ Número de pedido generado: PED-2025-000012
+[09-Dec-2025 16:14:48 UTC] ✓ Método de pago seleccionado: yape
+[09-Dec-2025 16:14:48 UTC] ✓ Validaciones finales
+[09-Dec-2025 16:14:48 UTC] ✓ Pedido creado en BD
+[09-Dec-2025 16:14:48 UTC] ✓ Método de pago mapeado
+[09-Dec-2025 16:14:48 UTC] ✓ Venta creada (pendiente)
+[09-Dec-2025 16:14:48 UTC] ✓ Detalles de venta insertados
+[09-Dec-2025 16:14:48 UTC] ✓ Pedido vinculado con venta
+[09-Dec-2025 16:14:48 UTC] ✓ Detalles del pedido insertados y stock actualizado
+[09-Dec-2025 16:14:48 UTC] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+[09-Dec-2025 16:14:48 UTC] === FIN procesar_pedido_directo.php ===
+[09-Dec-2025 16:15:35 UTC] === INICIO init.php ===
+[09-Dec-2025 16:15:35 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:15:35 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:15:35 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:15:37 UTC] === INICIO init.php ===
+[09-Dec-2025 16:15:37 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:15:37 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:15:37 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:15:37 UTC] === INICIO init.php ===
+[09-Dec-2025 16:15:37 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:15:37 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:15:37 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:15:41 UTC] === INICIO init.php ===
+[09-Dec-2025 16:15:41 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:15:41 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:15:41 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:15:42 UTC] === INICIO init.php ===
+[09-Dec-2025 16:15:42 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:15:42 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:15:42 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:15:56 UTC] === INICIO init.php ===
+[09-Dec-2025 16:15:56 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:15:56 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:15:56 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:15:56 UTC] === INICIO init.php ===
+[09-Dec-2025 16:15:56 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:15:56 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:15:56 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 16:16:11 UTC] === INICIO procesar_pedido_directo.php ===
+[09-Dec-2025 16:16:11 UTC] Método HTTP: POST
+[09-Dec-2025 16:16:11 UTC] IP Cliente: 190.232.110.143
+[09-Dec-2025 16:16:11 UTC] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+[09-Dec-2025 16:16:11 UTC] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+[09-Dec-2025 16:16:11 UTC] ✓ Conexión a BD exitosa
+[09-Dec-2025 16:16:11 UTC] Validando tabla tb_estados...
+[09-Dec-2025 16:16:11 UTC] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+[09-Dec-2025 16:16:11 UTC] Raw input recibido (primeros 500 chars)
+[09-Dec-2025 16:16:11 UTC] ✓ JSON decodificado correctamente
+[09-Dec-2025 16:16:11 UTC] Cliente: Diego, Tel: 926992202, Dir: 
+[09-Dec-2025 16:16:11 UTC] Tipo pedido: para_llevar
+[09-Dec-2025 16:16:11 UTC] Productos: 1
+[09-Dec-2025 16:16:11 UTC] ✓ Cliente existente encontrado
+[09-Dec-2025 16:16:11 UTC] === INICIANDO TRANSACCIÓN ===
+[09-Dec-2025 16:16:11 UTC] ✓ Número de pedido generado: PED-2025-000013
+[09-Dec-2025 16:16:11 UTC] ✓ Método de pago seleccionado: tarjeta
+[09-Dec-2025 16:16:11 UTC] ✓ Validaciones finales
+[09-Dec-2025 16:16:11 UTC] ✓ Pedido creado en BD
+[09-Dec-2025 16:16:11 UTC] ✓ Método de pago mapeado
+[09-Dec-2025 16:16:11 UTC] ✓ Venta creada (pendiente)
+[09-Dec-2025 16:16:11 UTC] ✓ Detalles de venta insertados
+[09-Dec-2025 16:16:11 UTC] ✓ Pedido vinculado con venta
+[09-Dec-2025 16:16:11 UTC] ✓ Detalles del pedido insertados y stock actualizado
+[09-Dec-2025 16:16:11 UTC] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+[09-Dec-2025 16:16:11 UTC] === FIN procesar_pedido_directo.php ===
+[09-Dec-2025 16:21:37 UTC] === INICIO init.php ===
+[09-Dec-2025 16:21:37 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 16:21:37 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 16:21:37 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 19:27:09 UTC] === INICIO init.php ===
+[09-Dec-2025 19:27:09 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 19:27:09 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 19:27:09 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 19:27:18 UTC] === INICIO init.php ===
+[09-Dec-2025 19:27:18 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 19:27:18 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 19:27:18 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 19:29:42 UTC] === INICIO init.php ===
+[09-Dec-2025 19:29:42 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 19:29:42 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 19:29:42 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 19:29:42 UTC] === INICIO init.php ===
+[09-Dec-2025 19:29:42 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 19:29:42 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 19:29:42 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 19:29:48 UTC] === INICIO init.php ===
+[09-Dec-2025 19:29:48 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 19:29:48 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 19:29:48 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 19:29:50 UTC] === INICIO init.php ===
+[09-Dec-2025 19:29:50 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 19:29:50 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 19:29:50 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 19:29:59 UTC] === INICIO init.php ===
+[09-Dec-2025 19:29:59 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 19:29:59 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 19:29:59 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 19:30:01 UTC] === INICIO init.php ===
+[09-Dec-2025 19:30:01 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 19:30:01 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 19:30:01 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 19:30:03 UTC] === INICIO init.php ===
+[09-Dec-2025 19:30:03 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 19:30:03 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 19:30:03 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 23:10:44 UTC] === INICIO init.php ===
+[09-Dec-2025 23:10:44 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 23:10:44 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 23:10:44 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 23:10:49 UTC] === INICIO init.php ===
+[09-Dec-2025 23:10:49 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 23:10:49 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 23:10:49 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[09-Dec-2025 23:10:57 UTC] === INICIO init.php ===
+[09-Dec-2025 23:10:57 UTC] SERVER_NAME: allwiya.pe
+[09-Dec-2025 23:10:57 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[09-Dec-2025 23:10:57 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:37:22 UTC] === INICIO init.php ===
+[10-Dec-2025 01:37:22 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:37:22 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:37:22 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:37:29 UTC] === INICIO init.php ===
+[10-Dec-2025 01:37:29 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:37:29 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:37:29 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:37:37 UTC] === INICIO init.php ===
+[10-Dec-2025 01:37:37 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:37:37 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:37:37 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:37:37 UTC] === INICIO init.php ===
+[10-Dec-2025 01:37:37 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:37:37 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:37:37 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:38:18 UTC] === INICIO init.php ===
+[10-Dec-2025 01:38:18 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:38:18 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:38:18 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:38:26 UTC] === INICIO init.php ===
+[10-Dec-2025 01:38:26 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:38:26 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:38:26 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:38:32 UTC] === INICIO init.php ===
+[10-Dec-2025 01:38:32 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:38:32 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:38:32 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:38:35 UTC] === INICIO init.php ===
+[10-Dec-2025 01:38:35 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:38:35 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:38:35 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:38:43 UTC] === INICIO init.php ===
+[10-Dec-2025 01:38:43 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:38:43 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:38:43 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:38:48 UTC] === INICIO init.php ===
+[10-Dec-2025 01:38:48 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:38:48 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:38:48 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:39:12 UTC] === INICIO init.php ===
+[10-Dec-2025 01:39:12 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:39:12 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:39:12 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:39:12 UTC] === INICIO init.php ===
+[10-Dec-2025 01:39:12 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:39:12 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:39:12 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:40:21 UTC] === INICIO procesar_pedido_directo.php ===
+[10-Dec-2025 01:40:21 UTC] Método HTTP: POST
+[10-Dec-2025 01:40:21 UTC] IP Cliente: 38.250.148.72
+[10-Dec-2025 01:40:21 UTC] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+[10-Dec-2025 01:40:21 UTC] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+[10-Dec-2025 01:40:21 UTC] ✓ Conexión a BD exitosa
+[10-Dec-2025 01:40:21 UTC] Validando tabla tb_estados...
+[10-Dec-2025 01:40:21 UTC] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+[10-Dec-2025 01:40:21 UTC] Raw input recibido (primeros 500 chars)
+[10-Dec-2025 01:40:21 UTC] ✓ JSON decodificado correctamente
+[10-Dec-2025 01:40:21 UTC] Cliente: Reyhan, Tel: 920572674, Dir: Calle Tambo Viejo, Vírgen Inmaculada Concepción, Cieneguilla, Lima, Lima Metropolitana, Lima, Perú, Lima. Ref: Casa blanca con cochera de roble
+[10-Dec-2025 01:40:21 UTC] Tipo pedido: delivery
+[10-Dec-2025 01:40:21 UTC] Productos: 8
+[10-Dec-2025 01:40:21 UTC] ✓ Cliente existente encontrado
+[10-Dec-2025 01:40:21 UTC] === INICIANDO TRANSACCIÓN ===
+[10-Dec-2025 01:40:21 UTC] ✓ Número de pedido generado: PED-2025-495779
+[10-Dec-2025 01:40:21 UTC] ✓ Método de pago seleccionado: tarjeta
+[10-Dec-2025 01:40:21 UTC] ✓ Validaciones finales
+[10-Dec-2025 01:40:21 UTC] ✓ Pedido creado en BD
+[10-Dec-2025 01:40:21 UTC] ✓ Método de pago mapeado
+[10-Dec-2025 01:40:21 UTC] ✓ Venta creada (pendiente)
+[10-Dec-2025 01:40:21 UTC] ✓ Detalles de venta insertados
+[10-Dec-2025 01:40:21 UTC] ✓ Pedido vinculado con venta
+[10-Dec-2025 01:40:21 UTC] ✓ Detalles del pedido insertados y stock actualizado
+[10-Dec-2025 01:40:21 UTC] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+[10-Dec-2025 01:40:21 UTC] === FIN procesar_pedido_directo.php ===
+[10-Dec-2025 01:40:25 UTC] === INICIO init.php ===
+[10-Dec-2025 01:40:25 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:40:25 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:40:25 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:41:07 UTC] === INICIO init.php ===
+[10-Dec-2025 01:41:07 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:41:07 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:41:07 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:41:16 UTC] === INICIO init.php ===
+[10-Dec-2025 01:41:16 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:41:16 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:41:16 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:41:37 UTC] === INICIO init.php ===
+[10-Dec-2025 01:41:37 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:41:37 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:41:37 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:41:49 UTC] === INICIO init.php ===
+[10-Dec-2025 01:41:49 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:41:49 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:41:49 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:41:59 UTC] === INICIO init.php ===
+[10-Dec-2025 01:41:59 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:41:59 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:41:59 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:41:59 UTC] === INICIO init.php ===
+[10-Dec-2025 01:41:59 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:41:59 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:41:59 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:42:36 UTC] === INICIO procesar_pedido_directo.php ===
+[10-Dec-2025 01:42:36 UTC] Método HTTP: POST
+[10-Dec-2025 01:42:36 UTC] IP Cliente: 38.250.148.72
+[10-Dec-2025 01:42:36 UTC] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+[10-Dec-2025 01:42:36 UTC] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+[10-Dec-2025 01:42:36 UTC] ✓ Conexión a BD exitosa
+[10-Dec-2025 01:42:36 UTC] Validando tabla tb_estados...
+[10-Dec-2025 01:42:36 UTC] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+[10-Dec-2025 01:42:36 UTC] Raw input recibido (primeros 500 chars)
+[10-Dec-2025 01:42:36 UTC] ✓ JSON decodificado correctamente
+[10-Dec-2025 01:42:36 UTC] Cliente: Reyhan, Tel: 920572674, Dir: Calle Tambo Nuevo, Cieneguilla, Lima, Lima Metropolitana, Lima, Perú, Lima. Ref: Casa blanca con cochera de roble
+[10-Dec-2025 01:42:36 UTC] Tipo pedido: delivery
+[10-Dec-2025 01:42:36 UTC] Productos: 5
+[10-Dec-2025 01:42:36 UTC] ✓ Cliente existente encontrado
+[10-Dec-2025 01:42:36 UTC] === INICIANDO TRANSACCIÓN ===
+[10-Dec-2025 01:42:36 UTC] ✓ Número de pedido generado: PED-2025-495780
+[10-Dec-2025 01:42:36 UTC] ✓ Método de pago seleccionado: tarjeta
+[10-Dec-2025 01:42:36 UTC] ✓ Validaciones finales
+[10-Dec-2025 01:42:36 UTC] ✓ Pedido creado en BD
+[10-Dec-2025 01:42:36 UTC] ✓ Método de pago mapeado
+[10-Dec-2025 01:42:36 UTC] ✓ Venta creada (pendiente)
+[10-Dec-2025 01:42:36 UTC] ✓ Detalles de venta insertados
+[10-Dec-2025 01:42:36 UTC] ✓ Pedido vinculado con venta
+[10-Dec-2025 01:42:36 UTC] ✓ Detalles del pedido insertados y stock actualizado
+[10-Dec-2025 01:42:36 UTC] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+[10-Dec-2025 01:42:36 UTC] === FIN procesar_pedido_directo.php ===
+[10-Dec-2025 01:42:42 UTC] === INICIO init.php ===
+[10-Dec-2025 01:42:42 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:42:42 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:42:42 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:42:46 UTC] === INICIO init.php ===
+[10-Dec-2025 01:42:46 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:42:46 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:42:46 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:42:56 UTC] === INICIO init.php ===
+[10-Dec-2025 01:42:56 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:42:56 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:42:56 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:43:00 UTC] === INICIO init.php ===
+[10-Dec-2025 01:43:00 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:43:00 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:43:00 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:43:08 UTC] === INICIO init.php ===
+[10-Dec-2025 01:43:08 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:43:08 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:43:08 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:43:16 UTC] === INICIO init.php ===
+[10-Dec-2025 01:43:16 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:43:16 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:43:16 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:43:24 UTC] === INICIO init.php ===
+[10-Dec-2025 01:43:24 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:43:24 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:43:24 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:43:29 UTC] === INICIO init.php ===
+[10-Dec-2025 01:43:29 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:43:29 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:43:29 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:43:32 UTC] === INICIO init.php ===
+[10-Dec-2025 01:43:32 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:43:32 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:43:32 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:43:40 UTC] === INICIO init.php ===
+[10-Dec-2025 01:43:40 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:43:40 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:43:40 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:43:54 UTC] === INICIO init.php ===
+[10-Dec-2025 01:43:54 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:43:54 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:43:54 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:44:02 UTC] === INICIO init.php ===
+[10-Dec-2025 01:44:02 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:44:02 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:44:02 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 01:44:21 UTC] === INICIO init.php ===
+[10-Dec-2025 01:44:21 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 01:44:21 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 01:44:21 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 18:38:23 UTC] === INICIO init.php ===
+[10-Dec-2025 18:38:23 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 18:38:23 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 18:38:23 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 19:20:49 UTC] === INICIO init.php ===
+[10-Dec-2025 19:20:49 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 19:20:49 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 19:20:49 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 19:21:04 UTC] === INICIO init.php ===
+[10-Dec-2025 19:21:04 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 19:21:04 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 19:21:04 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 19:21:28 UTC] === INICIO init.php ===
+[10-Dec-2025 19:21:28 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 19:21:28 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 19:21:28 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 19:21:50 UTC] === INICIO init.php ===
+[10-Dec-2025 19:21:50 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 19:21:50 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 19:21:50 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 19:21:53 UTC] === INICIO init.php ===
+[10-Dec-2025 19:21:53 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 19:21:53 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 19:21:53 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 19:22:01 UTC] === INICIO init.php ===
+[10-Dec-2025 19:22:01 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 19:22:01 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 19:22:01 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 19:22:09 UTC] === INICIO init.php ===
+[10-Dec-2025 19:22:09 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 19:22:09 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 19:22:09 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:41:47 UTC] === INICIO init.php ===
+[10-Dec-2025 22:41:47 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:41:47 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:41:47 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:42:01 UTC] === INICIO init.php ===
+[10-Dec-2025 22:42:01 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:42:01 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:42:01 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:42:21 UTC] === INICIO init.php ===
+[10-Dec-2025 22:42:21 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:42:21 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:42:21 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:44:36 UTC] === INICIO init.php ===
+[10-Dec-2025 22:44:36 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:44:36 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:44:36 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:44:44 UTC] === INICIO init.php ===
+[10-Dec-2025 22:44:44 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:44:44 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:44:44 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:52:20 UTC] === INICIO init.php ===
+[10-Dec-2025 22:52:20 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:52:20 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:52:20 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:58:34 UTC] === INICIO init.php ===
+[10-Dec-2025 22:58:34 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:58:34 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:58:34 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:58:56 UTC] === INICIO init.php ===
+[10-Dec-2025 22:58:56 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:58:56 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:58:56 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:58:57 UTC] === INICIO init.php ===
+[10-Dec-2025 22:58:57 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:58:57 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:58:57 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:59:07 UTC] === INICIO init.php ===
+[10-Dec-2025 22:59:07 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:59:07 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:59:07 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 22:59:16 UTC] === INICIO init.php ===
+[10-Dec-2025 22:59:16 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 22:59:16 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 22:59:16 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 23:00:17 UTC] === INICIO init.php ===
+[10-Dec-2025 23:00:17 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 23:00:17 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 23:00:17 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 23:01:13 UTC] === INICIO init.php ===
+[10-Dec-2025 23:01:13 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 23:01:13 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 23:01:13 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 23:01:29 UTC] === INICIO init.php ===
+[10-Dec-2025 23:01:29 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 23:01:29 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 23:01:29 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 23:01:41 UTC] === INICIO init.php ===
+[10-Dec-2025 23:01:41 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 23:01:41 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 23:01:41 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 23:02:46 UTC] === INICIO init.php ===
+[10-Dec-2025 23:02:46 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 23:02:46 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 23:02:46 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 23:03:00 UTC] === INICIO init.php ===
+[10-Dec-2025 23:03:00 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 23:03:00 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 23:03:00 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 23:06:37 UTC] === INICIO init.php ===
+[10-Dec-2025 23:06:37 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 23:06:37 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 23:06:37 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 23:10:00 UTC] === INICIO init.php ===
+[10-Dec-2025 23:10:00 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 23:10:00 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 23:10:00 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[10-Dec-2025 23:29:44 UTC] === INICIO init.php ===
+[10-Dec-2025 23:29:44 UTC] SERVER_NAME: allwiya.pe
+[10-Dec-2025 23:29:44 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[10-Dec-2025 23:29:44 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:27:07 UTC] === INICIO init.php ===
+[11-Dec-2025 00:27:07 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:27:07 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:27:07 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:27:11 UTC] === INICIO init.php ===
+[11-Dec-2025 00:27:11 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:27:11 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:27:11 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:27:11 UTC] === INICIO init.php ===
+[11-Dec-2025 00:27:11 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:27:11 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:27:11 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:27:27 UTC] === INICIO init.php ===
+[11-Dec-2025 00:27:27 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:27:27 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:27:27 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:27:32 UTC] === INICIO init.php ===
+[11-Dec-2025 00:27:32 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:27:32 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:27:32 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:27:40 UTC] === INICIO init.php ===
+[11-Dec-2025 00:27:40 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:27:40 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:27:40 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:27:48 UTC] === INICIO init.php ===
+[11-Dec-2025 00:27:48 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:27:48 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:27:48 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:27:56 UTC] === INICIO init.php ===
+[11-Dec-2025 00:27:56 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:27:56 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:27:56 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:28:04 UTC] === INICIO init.php ===
+[11-Dec-2025 00:28:04 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:28:04 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:28:04 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:28:12 UTC] === INICIO init.php ===
+[11-Dec-2025 00:28:12 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:28:12 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:28:12 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:28:16 UTC] === INICIO init.php ===
+[11-Dec-2025 00:28:16 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:28:16 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:28:16 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:28:23 UTC] === INICIO init.php ===
+[11-Dec-2025 00:28:23 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:28:23 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:28:23 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:28:56 UTC] === INICIO init.php ===
+[11-Dec-2025 00:28:56 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:28:56 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:28:56 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:29:04 UTC] === INICIO init.php ===
+[11-Dec-2025 00:29:04 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:29:04 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:29:04 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:29:05 UTC] === INICIO init.php ===
+[11-Dec-2025 00:29:05 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:29:05 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:29:05 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:29:16 UTC] === INICIO procesar_pedido_directo.php ===
+[11-Dec-2025 00:29:16 UTC] Método HTTP: POST
+[11-Dec-2025 00:29:16 UTC] IP Cliente: 38.250.148.72
+[11-Dec-2025 00:29:16 UTC] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+[11-Dec-2025 00:29:16 UTC] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+[11-Dec-2025 00:29:16 UTC] ✓ Conexión a BD exitosa
+[11-Dec-2025 00:29:16 UTC] Validando tabla tb_estados...
+[11-Dec-2025 00:29:16 UTC] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+[11-Dec-2025 00:29:16 UTC] Raw input recibido (primeros 500 chars)
+[11-Dec-2025 00:29:16 UTC] ✓ JSON decodificado correctamente
+[11-Dec-2025 00:29:16 UTC] Cliente: Reyhan, Tel: 920572674, Dir: 
+[11-Dec-2025 00:29:16 UTC] Tipo pedido: para_llevar
+[11-Dec-2025 00:29:16 UTC] Productos: 1
+[11-Dec-2025 00:29:16 UTC] ✓ Cliente existente encontrado
+[11-Dec-2025 00:29:16 UTC] === INICIANDO TRANSACCIÓN ===
+[11-Dec-2025 00:29:16 UTC] ✓ Número de pedido generado: PED-2025-502220
+[11-Dec-2025 00:29:16 UTC] ✓ Método de pago seleccionado: yape
+[11-Dec-2025 00:29:16 UTC] ✓ Validaciones finales
+[11-Dec-2025 00:29:16 UTC] ✓ Pedido creado en BD
+[11-Dec-2025 00:29:16 UTC] ✓ Método de pago mapeado
+[11-Dec-2025 00:29:16 UTC] ✓ Venta creada (pendiente)
+[11-Dec-2025 00:29:16 UTC] ✓ Detalles de venta insertados
+[11-Dec-2025 00:29:16 UTC] ✓ Pedido vinculado con venta
+[11-Dec-2025 00:29:16 UTC] ✓ Detalles del pedido insertados y stock actualizado
+[11-Dec-2025 00:29:16 UTC] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+[11-Dec-2025 00:29:16 UTC] === FIN procesar_pedido_directo.php ===
+[11-Dec-2025 00:30:18 UTC] === INICIO init.php ===
+[11-Dec-2025 00:30:18 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:30:18 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:30:18 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:30:43 UTC] === INICIO init.php ===
+[11-Dec-2025 00:30:43 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:30:43 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:30:43 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:31:20 UTC] === INICIO init.php ===
+[11-Dec-2025 00:31:20 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:31:20 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:31:20 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:31:29 UTC] === INICIO init.php ===
+[11-Dec-2025 00:31:29 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:31:29 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:31:29 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:34:29 UTC] === INICIO init.php ===
+[11-Dec-2025 00:34:29 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:34:29 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:34:29 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:34:44 UTC] === INICIO init.php ===
+[11-Dec-2025 00:34:44 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:34:44 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:34:44 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php
+[11-Dec-2025 00:34:48 UTC] === INICIO init.php ===
+[11-Dec-2025 00:34:48 UTC] SERVER_NAME: allwiya.pe
+[11-Dec-2025 00:34:48 UTC] ADMIN_PATH definido: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/
+[11-Dec-2025 00:34:48 UTC] Intentando cargar config.php: /home/allwiya/public_html/www.alberco.com/app/../../www.sistemaadmalberco.com/services/database/config.php

@@ -1,0 +1,375 @@
+/* ================================================
+   FORMULARIO DE PEDIDO MEJORADO - ALBERCO
+   ================================================ */
+
+/* Cards de Selección Visual */
+.selection-card {
+    border: 3px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.selection-card:hover {
+    border-color: #ff6b35;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.2);
+}
+
+.selection-card.selected {
+    border-color: #ff6b35;
+    background: linear-gradient(135deg, #fff5f2, #ffffff);
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+}
+
+.selection-card.selected::before {
+    content: '\f058';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #28a745;
+    animation: checkPop 0.3s ease;
+}
+
+@keyframes checkPop {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.selection-card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff6b35;
+    transition: transform 0.3s ease;
+}
+
+.selection-card:hover .selection-card-icon {
+    transform: scale(1.15);
+}
+
+.selection-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.selection-card-subtitle {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.selection-card input[type="radio"] {
+    display: none;
+}
+
+/* Grid Responsive para Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .selection-card {
+        padding: 1rem;
+    }
+
+    .selection-card-icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* Direcciones Guardadas */
+.saved-address-card {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.saved-address-card:hover {
+    border-color: #ff6b35;
+    background: #fff5f2;
+}
+
+.saved-address-card.selected {
+    border-color: #ff6b35;
+    background: #fff5f2;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.15);
+}
+
+.address-badge-principal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffc107;
+    color: #000;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.address-text {
+    font-size: 0.95rem;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.address-district {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    font-weight: 600;
+}
+
+.btn-new-address {
+    border: 2px dashed #ff6b35;
+    background: white;
+    color: #ff6b35;
+    font-weight: 600;
+    padding: 0.75rem;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.btn-new-address:hover {
+    background: #fff5f2;
+    border-style: solid;
+}
+
+/* Métodos de Pago Visuales */
+.payment-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.payment-icon {
+    font-size: 2rem;
+}
+
+.payment-icon.yape {
+    color: #722c85;
+}
+
+.payment-icon.plin {
+    color: #00a9e0;
+}
+
+.payment-icon.efectivo {
+    color: #28a745;
+}
+
+.payment-icon.tarjeta {
+    color: #007bff;
+}
+
+/* Barra de Progreso */
+.progress-bar-custom {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff6b35, #ffa500);
+    border-radius: 10px;
+    transition: width 0.4s ease;
+    position: relative;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Sección Expandible */
+.expandable-section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.expandable-section.expanded {
+    max-height: 1000px;
+}
+
+/* Delivery Cost Badge */
+.delivery-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.delivery-free {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+}
+
+/* Horarios Sugeridos */
+.time-slot {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+.time-slot:hover:not(.disabled) {
+    border-color: #ff6b35;
+    background: #fff5f2;
+}
+
+.time-slot.selected {
+    border-color: #ff6b35;
+    background: #ff6b35;
+    color: white;
+}
+
+.time-slot.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Validación en Tiempo Real */
+.form-control.valid {
+    border-color: #28a745;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-control.invalid {
+    border-color: #dc3545;
+}
+
+/* Loading Spinner */
+.spinner-border-sm-custom {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border .75s linear infinite;
+}
+
+/* Animaciones de Entrada */
+.fade-in {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tooltips Personalizados */
+.custom-tooltip {
+    position: relative;
+}
+
+.custom-tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c3e50;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cards-grid {
+        gap: 0.75rem;
+    }
+
+    .selection-card-title {
+        font-size: 1rem;
+    }
+
+    .delivery-badge {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

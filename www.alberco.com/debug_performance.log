@@ -1,0 +1,17 @@
+[2025-12-09 03:27:26] === INICIO DE PRUEBA DE RENDIMIENTO ===
+[2025-12-09 03:27:26] System Info: 0.033140182495117ms
+[2025-12-09 03:27:26] DB Connection: 0.00ms, Query: 14.03ms
+[2025-12-09 03:27:26] Model Producto: 3.31ms, 2 productos
+[2025-12-09 03:27:26] Model Categoria: 1.80ms, 9 categorías
+[2025-12-09 03:27:26] Page Inicio: ✅ Existe
+[2025-12-09 03:27:26] Page Menú: ✅ Existe
+[2025-12-09 03:27:26] Page Promociones: ✅ Existe
+[2025-12-09 03:27:26] Page Pedido: ✅ Existe
+[2025-12-09 03:27:26] Page Tracking: ❌ No encontrado
+[2025-12-09 03:27:26] Query 'Productos Activos': 0.466ms, 2 rows
+[2025-12-09 03:27:26] Query 'Categorías con Productos': 4.587ms, 9 rows
+[2025-12-09 03:27:26] Query 'Pedidos Recientes': 3.739ms, 5 rows
+[2025-12-09 03:27:26] === RESUMEN FINAL ===
+[2025-12-09 03:27:26] Tiempo Total: 57.28ms
+[2025-12-09 03:27:26] Tests Ejecutados: 8
+[2025-12-09 03:27:26] Memoria Peak: 855.19 KB

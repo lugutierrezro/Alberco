@@ -1,0 +1,2999 @@
+[2025-12-09 07:02:40] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Test Usuario\",\"telefono\":\"999888777\",\"direccion\":\"Av. Test 123\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Producto Test\",\"precio\":25,\"cantidad\":2,\"observaciones\":null}],\"metodo_pago\":\"efectivo\",\"observaciones\":\"Test desde HTML\",\"subtotal\":50,\"descuento\":0,\"costo_delivery\":5,\"total\":55}"
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] Cliente: Test Usuario, Tel: 999888777, Dir: Av. Test 123
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Producto Test",
+        "precio": 25,
+        "cantidad": 2,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] Creando nuevo cliente: Test Usuario
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] ✓ Nuevo cliente creado
+                      Datos: {
+    "id": "5"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] ✓ Número de pedido generado: PED-2025-000010
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "11",
+    "nro": "PED-2025-000010"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "11",
+    "nro_pedido": "PED-2025-000010",
+    "cliente_id": "5",
+    "total": 55,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:02:40] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú\",\"referencia\":\"asdad\"},\"tipo_pedido\":\"delivery\",\"metodo_pago\":\"efectivo\",\"observaciones\":\"ASDASD\",\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"imagen\":\"http:\/\/localhost\/www.sistemaadmalberco.com\/uploads\/almacen\/PROD_prod-5_1765259185.jpg\",\"categoria\":\"Producto\",\"cantidad\":2}],\"distrito\":\"Ate\",\"costo_delivery\":5,\"subtota"
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "cliente",
+    "tipo_pedido",
+    "metodo_pago",
+    "observaciones",
+    "productos",
+    "distrito",
+    "costo_delivery",
+    "subtotal",
+    "total",
+    "mesa_id"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "imagen": "http:\/\/localhost\/www.sistemaadmalberco.com\/uploads\/almacen\/PROD_prod-5_1765259185.jpg",
+        "categoria": "Producto",
+        "cantidad": 2
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": null
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] ✓ Número de pedido generado: PED-2025-000011
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "12",
+    "nro": "PED-2025-000011"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "12",
+    "nro_pedido": "PED-2025-000011",
+    "cliente_id": 1,
+    "total": 51,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:17:51] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] User Agent: desconocido
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Test\",\"telefono\":\"999999999\",\"direccion\":\"Test 123\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Test\",\"precio\":10,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"efectivo\",\"observaciones\":\"\",\"subtotal\":10,\"descuento\":0,\"costo_delivery\":5,\"total\":15}"
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] Cliente: Test, Tel: 999999999, Dir: Test 123
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Test",
+        "precio": 10,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] Creando nuevo cliente: Test
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] ✓ Nuevo cliente creado
+                      Datos: {
+    "id": "6"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] ✓ Número de pedido generado: PED-2025-000012
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "13",
+    "nro": "PED-2025-000012"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "13",
+    "nro_pedido": "PED-2025-000012",
+    "cliente_id": "6",
+    "total": 15,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:19:52] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"\",\"referencia\":\"asdad\"},\"tipo_pedido\":\"delivery\",\"metodo_pago\":\"efectivo\",\"observaciones\":\"ASDADASD\",\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"imagen\":\"http:\/\/localhost\/www.sistemaadmalberco.com\/uploads\/almacen\/PROD_prod-5_1765259185.jpg\",\"categoria\":\"Producto\",\"cantidad\":3}],\"distrito\":\"Ate\",\"costo_delivery\":5,\"subtotal\":69,\"total\":74,\"mesa_id\":null}"
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "cliente",
+    "tipo_pedido",
+    "metodo_pago",
+    "observaciones",
+    "productos",
+    "distrito",
+    "costo_delivery",
+    "subtotal",
+    "total",
+    "mesa_id"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "imagen": "http:\/\/localhost\/www.sistemaadmalberco.com\/uploads\/almacen\/PROD_prod-5_1765259185.jpg",
+        "categoria": "Producto",
+        "cantidad": 3
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": null
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] ✓ Número de pedido generado: PED-2025-000013
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "14",
+    "nro": "PED-2025-000013"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "14",
+    "nro_pedido": "PED-2025-000013",
+    "cliente_id": 1,
+    "total": 74,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:22:12] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida Alfonso Ugarte, Condominio El Bosque, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Ate. Ref: asdad\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":2,\"nombre\":\"Prueba\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"efectivo\",\"observaciones\":\"asdasd\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida Alfonso Ugarte, Condominio El Bosque, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Ate. Ref: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 2,
+        "nombre": "Prueba",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": null
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] ✓ Número de pedido generado: PED-2025-000014
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "15",
+    "nro": "PED-2025-000014"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "15",
+    "nro_pedido": "PED-2025-000014",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:37:09] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Ate. Ref: asdasd\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"efectivo\",\"observaciones\":\"adad\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Ate. Ref: asdasd
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": null
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] ✓ Número de pedido generado: PED-2025-000015
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "16",
+    "nro": "PED-2025-000015"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "16",
+    "nro_pedido": "PED-2025-000015",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:46:24] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Prueba87654322\",\"precio\":24,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"efectivo\",\"observaciones\":\"asdasd\",\"subtotal\":24,\"descuento\":0,\"costo_delivery\":5,\"total\":29}"
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Prueba87654322",
+        "precio": 24,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] ✓ Número de pedido generado: PED-2025-000016
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "17",
+    "nro": "PED-2025-000016"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "17",
+    "nro_pedido": "PED-2025-000016",
+    "cliente_id": 1,
+    "total": 29,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 07:52:32] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"efectivo\",\"observaciones\":\"asdasd\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] ✓ Número de pedido generado: PED-2025-000017
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "18",
+    "nro": "PED-2025-000017"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "18",
+    "nro_pedido": "PED-2025-000017",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 14:57:20] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Prueba87654322\",\"precio\":24,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"efectivo\",\"observaciones\":\"asdas\",\"subtotal\":24,\"descuento\":0,\"costo_delivery\":5,\"total\":29}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Prueba87654322",
+        "precio": 24,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] ✓ Número de pedido generado: PED-2025-000018
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "19",
+    "nro": "PED-2025-000018"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "19",
+    "nro_pedido": "PED-2025-000018",
+    "cliente_id": 1,
+    "total": 29,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:02:53] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Prueba87654322\",\"precio\":24,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"asdad\",\"subtotal\":24,\"descuento\":0,\"costo_delivery\":5,\"total\":29}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Prueba87654322",
+        "precio": 24,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] ✓ Número de pedido generado: PED-2025-000019
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] Método de pago: yape
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": "Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad",
+    "mesa_final": null,
+    "metodo_pago": "yape"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [ERROR] ⚠️ Transacción revertida
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [ERROR] ❌ ERROR CRÍTICO
+                      Datos: {
+    "mensaje": "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'metodo_pago' in 'field list'",
+    "archivo": "C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php",
+    "linea": 239,
+    "trace": "#0 C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php(239): PDOStatement->execute(Array)\n#1 {main}"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:02] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Prueba87654322\",\"precio\":24,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"asdad\",\"subtotal\":24,\"descuento\":0,\"costo_delivery\":5,\"total\":29}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Prueba87654322",
+        "precio": 24,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] ✓ Número de pedido generado: PED-2025-000019
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] Método de pago: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": "Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad",
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [ERROR] ⚠️ Transacción revertida
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [ERROR] ❌ ERROR CRÍTICO
+                      Datos: {
+    "mensaje": "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'metodo_pago' in 'field list'",
+    "archivo": "C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php",
+    "linea": 239,
+    "trace": "#0 C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php(239): PDOStatement->execute(Array)\n#1 {main}"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:11] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:13] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:13] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:13] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:13] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:13] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Prueba87654322\",\"precio\":24,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"efectivo\",\"observaciones\":\"asdad\",\"subtotal\":24,\"descuento\":0,\"costo_delivery\":5,\"total\":29}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Prueba87654322",
+        "precio": 24,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] ✓ Número de pedido generado: PED-2025-000019
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] Método de pago: efectivo
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": "Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad",
+    "mesa_final": null,
+    "metodo_pago": "efectivo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [ERROR] ⚠️ Transacción revertida
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [ERROR] ❌ ERROR CRÍTICO
+                      Datos: {
+    "mensaje": "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'metodo_pago' in 'field list'",
+    "archivo": "C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php",
+    "linea": 239,
+    "trace": "#0 C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php(239): PDOStatement->execute(Array)\n#1 {main}"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:14] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Prueba87654322\",\"precio\":24,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"asdad\",\"subtotal\":24,\"descuento\":0,\"costo_delivery\":5,\"total\":29}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Prueba87654322",
+        "precio": 24,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] ✓ Número de pedido generado: PED-2025-000019
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] Método de pago: yape
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": "Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad",
+    "mesa_final": null,
+    "metodo_pago": "yape"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [ERROR] ⚠️ Transacción revertida
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [ERROR] ❌ ERROR CRÍTICO
+                      Datos: {
+    "mensaje": "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'metodo_pago' in 'field list'",
+    "archivo": "C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php",
+    "linea": 239,
+    "trace": "#0 C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php(239): PDOStatement->execute(Array)\n#1 {main}"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:21] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"para_llevar\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":null,\"mesa\":null,\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Prueba87654322\",\"precio\":24,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"asdad\",\"subtotal\":24,\"descuento\":0,\"costo_delivery\":0,\"total\":24}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] Tipo pedido: para_llevar
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Prueba87654322",
+        "precio": 24,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] ✓ Número de pedido generado: PED-2025-000019
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] Método de pago: yape
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": null,
+    "mesa_final": null,
+    "metodo_pago": "yape"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [ERROR] ⚠️ Transacción revertida
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [ERROR] ❌ ERROR CRÍTICO
+                      Datos: {
+    "mensaje": "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'metodo_pago' in 'field list'",
+    "archivo": "C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php",
+    "linea": 239,
+    "trace": "#0 C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php(239): PDOStatement->execute(Array)\n#1 {main}"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:07:44] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"mesa\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":null,\"mesa\":\"1\",\"email\":null},\"productos\":[{\"id\":1,\"nombre\":\"Prueba87654322\",\"precio\":24,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"efectivo\",\"observaciones\":\"asd\",\"subtotal\":24,\"descuento\":0,\"costo_delivery\":0,\"total\":24}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] Tipo pedido: mesa
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Prueba87654322",
+        "precio": 24,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] ✓ Número de pedido generado: PED-2025-000019
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] Método de pago seleccionado (se guardará al crear venta): efectivo
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": null,
+    "mesa_final": "1",
+    "tipo_pedido": "mesa"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "20",
+    "nro": "PED-2025-000019"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "20",
+    "nro_pedido": "PED-2025-000019",
+    "cliente_id": 1,
+    "total": 24,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:11:45] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":2,\"nombre\":\"Prueba\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"asda\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 2,
+        "nombre": "Prueba",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] ✓ Número de pedido generado: PED-2025-000020
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] Método de pago seleccionado (se guardará al crear venta): yape
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": "Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas",
+    "mesa_final": null,
+    "tipo_pedido": "delivery"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "21",
+    "nro": "PED-2025-000020"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "21",
+    "nro_pedido": "PED-2025-000020",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:22] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":3,\"nombre\":\"Prueba\",\"precio\":25,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"asda\",\"subtotal\":25,\"descuento\":0,\"costo_delivery\":5,\"total\":30}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 3,
+        "nombre": "Prueba",
+        "precio": 25,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] ✓ Número de pedido generado: PED-2025-000021
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] Método de pago seleccionado (se guardará al crear venta): tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": "Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas",
+    "mesa_final": null,
+    "tipo_pedido": "delivery"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "22",
+    "nro": "PED-2025-000021"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "22",
+    "nro_pedido": "PED-2025-000021",
+    "cliente_id": 1,
+    "total": 30,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:19:47] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"para_llevar\",\"cliente\":{\"nombre\":\"Test Usuario\",\"telefono\":\"999999999\",\"direccion\":\"\",\"mesa\":null},\"productos\":[{\"id\":1,\"nombre\":\"Producto Test\",\"precio\":25,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"\",\"subtotal\":25,\"descuento\":0,\"costo_delivery\":0,\"total\":25}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] Cliente: Test Usuario, Tel: 999999999, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] Tipo pedido: para_llevar
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Producto Test",
+        "precio": 25,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 6,
+    "nombre": "Test"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] ✓ Número de pedido generado: PED-2025-000022
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] Método de pago: yape
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": null,
+    "mesa_final": null,
+    "metodo_pago": "yape",
+    "tipo_pedido": "para_llevar"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [ERROR] ⚠️ Transacción revertida
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [ERROR] ❌ ERROR CRÍTICO
+                      Datos: {
+    "mensaje": "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'metodo_pago' in 'field list'",
+    "archivo": "C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php",
+    "linea": 240,
+    "trace": "#0 C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php(240): PDOStatement->execute(Array)\n#1 {main}"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:17] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"mesa\",\"cliente\":{\"nombre\":\"Test Usuario\",\"telefono\":\"999999999\",\"direccion\":\"\",\"mesa\":\"1\"},\"productos\":[{\"id\":1,\"nombre\":\"Producto Test\",\"precio\":25,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"\",\"subtotal\":25,\"descuento\":0,\"costo_delivery\":0,\"total\":25}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] Cliente: Test Usuario, Tel: 999999999, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] Tipo pedido: mesa
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Producto Test",
+        "precio": 25,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 6,
+    "nombre": "Test"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] ✓ Número de pedido generado: PED-2025-000022
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] Método de pago: yape
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": null,
+    "mesa_final": "1",
+    "metodo_pago": "yape",
+    "tipo_pedido": "mesa"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [ERROR] ⚠️ Transacción revertida
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [ERROR] ❌ ERROR CRÍTICO
+                      Datos: {
+    "mensaje": "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'metodo_pago' in 'field list'",
+    "archivo": "C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php",
+    "linea": 240,
+    "trace": "#0 C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php(240): PDOStatement->execute(Array)\n#1 {main}"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:26:53] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"mesa\",\"cliente\":{\"nombre\":\"Test Usuario\",\"telefono\":\"999999999\",\"direccion\":\"\",\"mesa\":\"1\"},\"productos\":[{\"id\":1,\"nombre\":\"Producto Test\",\"precio\":25,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"\",\"subtotal\":25,\"descuento\":0,\"costo_delivery\":0,\"total\":25}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] Cliente: Test Usuario, Tel: 999999999, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] Tipo pedido: mesa
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Producto Test",
+        "precio": 25,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 6,
+    "nombre": "Test"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] ✓ Número de pedido generado: PED-2025-000022
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] Método de pago: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": null,
+    "mesa_final": "1",
+    "metodo_pago": "tarjeta",
+    "tipo_pedido": "mesa"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [ERROR] ⚠️ Transacción revertida
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [ERROR] ❌ ERROR CRÍTICO
+                      Datos: {
+    "mensaje": "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'metodo_pago' in 'field list'",
+    "archivo": "C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php",
+    "linea": 240,
+    "trace": "#0 C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php(240): PDOStatement->execute(Array)\n#1 {main}"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:12] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Test Usuario\",\"telefono\":\"999999999\",\"direccion\":\"asdad\",\"mesa\":null},\"productos\":[{\"id\":1,\"nombre\":\"Producto Test\",\"precio\":25,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"asdas\",\"subtotal\":25,\"descuento\":0,\"costo_delivery\":5,\"total\":30}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] Cliente: Test Usuario, Tel: 999999999, Dir: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 1,
+        "nombre": "Producto Test",
+        "precio": 25,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 6,
+    "nombre": "Test"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] ✓ Número de pedido generado: PED-2025-000022
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] Método de pago: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] Validaciones finales
+                      Datos: {
+    "direccion_final": "asdad",
+    "mesa_final": null,
+    "metodo_pago": "tarjeta",
+    "tipo_pedido": "delivery"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [ERROR] ⚠️ Transacción revertida
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [ERROR] ❌ ERROR CRÍTICO
+                      Datos: {
+    "mensaje": "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'metodo_pago' in 'field list'",
+    "archivo": "C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php",
+    "linea": 240,
+    "trace": "#0 C:\\xampp\\htdocs\\www.alberco.com\\Vista\\procesar_pedido_directo.php(240): PDOStatement->execute(Array)\n#1 {main}"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:27:19] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"asd\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ Número de pedido generado: PED-2025-000022
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ Observaciones con método de pago
+                      Datos: {
+    "observaciones_originales": "asd",
+    "observaciones_finales": "asd | 💳 Método de pago: TARJETA"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "delivery",
+    "direccion_final": "Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas",
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "23",
+    "nro": "PED-2025-000022"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "23",
+    "nro_pedido": "PED-2025-000022",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:41:45] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":2,\"nombre\":\"Prueba\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"asd\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 2,
+        "nombre": "Prueba",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Número de pedido generado: PED-2025-000023
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Método de pago seleccionado: yape
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "delivery",
+    "direccion_final": "Las Cascadas de Javier Prado, Santa Ana, Ate, Lima, Lima Metropolitana, Lima, 15498, Perú, Las Cascadas de Javier Prado. Ref: asdas",
+    "mesa_final": null,
+    "metodo_pago": "yape"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "24",
+    "nro": "PED-2025-000023"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "yape",
+    "id_metodo_pago": 3
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "8",
+    "nro_venta": 8,
+    "id_metodo_pago": 3,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "8"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "24",
+    "nro_pedido": "PED-2025-000023",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 15:53:32] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":2,\"nombre\":\"Prueba\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 2,
+        "nombre": "Prueba",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Número de pedido generado: PED-2025-000024
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "delivery",
+    "direccion_final": "Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: asdad",
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "25",
+    "nro": "PED-2025-000024"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "tarjeta",
+    "id_metodo_pago": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "10",
+    "nro_venta": 10,
+    "id_metodo_pago": 2,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "10"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "25",
+    "nro_pedido": "PED-2025-000024",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:10:45] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: \",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"adad\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: 
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Número de pedido generado: PED-2025-000025
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "delivery",
+    "direccion_final": "Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: ",
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "26",
+    "nro": "PED-2025-000025"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "tarjeta",
+    "id_metodo_pago": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "11",
+    "nro_venta": 11,
+    "id_metodo_pago": 2,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "11"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "26",
+    "nro_pedido": "PED-2025-000025",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:15:12] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: \",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"dada\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: 
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Número de pedido generado: PED-2025-000026
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "delivery",
+    "direccion_final": "Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: ",
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "27",
+    "nro": "PED-2025-000026"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "tarjeta",
+    "id_metodo_pago": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "12",
+    "nro_venta": 12,
+    "id_metodo_pago": 2,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "12"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "27",
+    "nro_pedido": "PED-2025-000026",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:21:30] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"para_llevar\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":null,\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":0,\"total\":23}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] Tipo pedido: para_llevar
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Número de pedido generado: PED-2025-000027
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "para_llevar",
+    "direccion_final": null,
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "28",
+    "nro": "PED-2025-000027"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "tarjeta",
+    "id_metodo_pago": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "13",
+    "nro_venta": 13,
+    "id_metodo_pago": 2,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "13"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "28",
+    "nro_pedido": "PED-2025-000027",
+    "cliente_id": 1,
+    "total": 23,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:35:40] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"para_llevar\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":null,\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":0,\"total\":23}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] Tipo pedido: para_llevar
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Número de pedido generado: PED-2025-000028
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Método de pago seleccionado: yape
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "para_llevar",
+    "direccion_final": null,
+    "mesa_final": null,
+    "metodo_pago": "yape"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "29",
+    "nro": "PED-2025-000028"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "yape",
+    "id_metodo_pago": 3
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "14",
+    "nro_venta": 14,
+    "id_metodo_pago": 3,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "14"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "29",
+    "nro_pedido": "PED-2025-000028",
+    "cliente_id": 1,
+    "total": 23,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:38:52] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: \",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"asdasd\",\"precio\":23,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"\",\"subtotal\":23,\"descuento\":0,\"costo_delivery\":5,\"total\":28}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: 
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "asdasd",
+        "precio": 23,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Número de pedido generado: PED-2025-000029
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "delivery",
+    "direccion_final": "Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: ",
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "30",
+    "nro": "PED-2025-000029"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "tarjeta",
+    "id_metodo_pago": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "15",
+    "nro_venta": 15,
+    "id_metodo_pago": 2,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "15"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "30",
+    "nro_pedido": "PED-2025-000029",
+    "cliente_id": 1,
+    "total": 28,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:15] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] IP Cliente: ::1
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] Conectando a BD: sistema_gestion_alberco_v3 en localhost
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"mesa\",\"cliente\":{\"nombre\":\"Luis Gustavo\",\"telefono\":\"980711209\",\"direccion\":null,\"mesa\":\"1\",\"email\":null},\"productos\":[{\"id\":3,\"nombre\":\"Prueba\",\"precio\":25,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"\",\"subtotal\":25,\"descuento\":0,\"costo_delivery\":0,\"total\":25}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] Cliente: Luis Gustavo, Tel: 980711209, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] Tipo pedido: mesa
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 3,
+        "nombre": "Prueba",
+        "precio": 25,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 1,
+    "nombre": "Luis Gustavo"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Número de pedido generado: PED-2025-000030
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "mesa",
+    "direccion_final": null,
+    "mesa_final": "1",
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "31",
+    "nro": "PED-2025-000030"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "tarjeta",
+    "id_metodo_pago": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "16",
+    "nro_venta": 16,
+    "id_metodo_pago": 2,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "16"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "31",
+    "nro_pedido": "PED-2025-000030",
+    "cliente_id": 1,
+    "total": 25,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:39:37] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] IP Cliente: 190.232.110.143
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Diego\",\"telefono\":\"926992202\",\"direccion\":\"Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: Casa roja\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":9,\"nombre\":\"1 POLLO - OFERTA 1\",\"precio\":55,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"\",\"subtotal\":55,\"descuento\":0,\"costo_delivery\":5,\"total\":60}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] Cliente: Diego, Tel: 926992202, Dir: Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: Casa roja
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 9,
+        "nombre": "1 POLLO - OFERTA 1",
+        "precio": 55,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 5,
+    "nombre": "Diego"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Número de pedido generado: PED-2025-000011
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Método de pago seleccionado: yape
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "delivery",
+    "direccion_final": "Avenida José Quiñones, El Remanso, Santa Clara, Ate, Lima, Lima Metropolitana, Lima, 15487, Perú, Santa Clara. Ref: Casa roja",
+    "mesa_final": null,
+    "metodo_pago": "yape"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "32",
+    "nro": "PED-2025-000011"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "yape",
+    "id_metodo_pago": 3
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "13",
+    "nro_venta": 6,
+    "id_metodo_pago": 3,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "13"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "32",
+    "nro_pedido": "PED-2025-000011",
+    "cliente_id": 5,
+    "total": 60,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:13:45] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] IP Cliente: 190.232.110.143
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"mesa\",\"cliente\":{\"nombre\":\"Diego\",\"telefono\":\"926992202\",\"direccion\":null,\"mesa\":\"10\",\"email\":null},\"productos\":[{\"id\":9,\"nombre\":\"1 POLLO - OFERTA 1\",\"precio\":55,\"cantidad\":1,\"observaciones\":null},{\"id\":21,\"nombre\":\"CALDO DE GALLINA C\/ PRESA GRANDE\",\"precio\":15,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"yape\",\"observaciones\":\"\",\"subtotal\":70,\"descuento\":0,\"costo_delivery\":0,\"total\":70}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] Cliente: Diego, Tel: 926992202, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] Tipo pedido: mesa
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] Productos: 2
+                      Datos: [
+    {
+        "id": 9,
+        "nombre": "1 POLLO - OFERTA 1",
+        "precio": 55,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 21,
+        "nombre": "CALDO DE GALLINA C\/ PRESA GRANDE",
+        "precio": 15,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 5,
+    "nombre": "Diego"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Número de pedido generado: PED-2025-000012
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Método de pago seleccionado: yape
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "mesa",
+    "direccion_final": null,
+    "mesa_final": "10",
+    "metodo_pago": "yape"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "33",
+    "nro": "PED-2025-000012"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "yape",
+    "id_metodo_pago": 3
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "14",
+    "nro_venta": 7,
+    "id_metodo_pago": 3,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "14"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "33",
+    "nro_pedido": "PED-2025-000012",
+    "cliente_id": 5,
+    "total": 70,
+    "productos": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:14:48] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] IP Cliente: 190.232.110.143
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"para_llevar\",\"cliente\":{\"nombre\":\"Diego\",\"telefono\":\"926992202\",\"direccion\":null,\"mesa\":null,\"email\":null},\"productos\":[{\"id\":13,\"nombre\":\"1 POLLO - PROMO CUMPLEAÑOS\",\"precio\":50,\"cantidad\":1,\"observaciones\":null}],\"metodo_pago\":\"tarjeta\",\"observaciones\":\"\",\"subtotal\":50,\"descuento\":0,\"costo_delivery\":0,\"total\":50}"
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] Cliente: Diego, Tel: 926992202, Dir: 
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] Tipo pedido: para_llevar
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] Productos: 1
+                      Datos: [
+    {
+        "id": 13,
+        "nombre": "1 POLLO - PROMO CUMPLEAÑOS",
+        "precio": 50,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 5,
+    "nombre": "Diego"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Número de pedido generado: PED-2025-000013
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "para_llevar",
+    "direccion_final": null,
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "34",
+    "nro": "PED-2025-000013"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "tarjeta",
+    "id_metodo_pago": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "15",
+    "nro_venta": 8,
+    "id_metodo_pago": 2,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "15"
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "34",
+    "nro_pedido": "PED-2025-000013",
+    "cliente_id": 5,
+    "total": 50,
+    "productos": 1
+}
+--------------------------------------------------------------------------------
+[2025-12-09 16:16:11] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------

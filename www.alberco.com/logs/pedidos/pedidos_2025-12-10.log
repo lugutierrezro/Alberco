@@ -1,0 +1,297 @@
+[2025-12-10 01:40:21] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] IP Cliente: 38.250.148.72
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Reyhan\",\"telefono\":\"920572674\",\"direccion\":\"Calle Tambo Viejo, Vírgen Inmaculada Concepción, Cieneguilla, Lima, Lima Metropolitana, Lima, Perú, Lima. Ref: Casa blanca con cochera de roble\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"1 POLLO\",\"precio\":50,\"cantidad\":1,\"observaciones\":null},{\"id\":13,\"nombre\":\"1 POLLO - PROMO CUMPLEAÑOS\",\"precio\":50,\"cantidad\":1,\"observaciones\":null},{\"id\":18,\"nombre\":\"CHAUFA A LO POBRE\",\"precio\":15,\"ca"
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] Cliente: Reyhan, Tel: 920572674, Dir: Calle Tambo Viejo, Vírgen Inmaculada Concepción, Cieneguilla, Lima, Lima Metropolitana, Lima, Perú, Lima. Ref: Casa blanca con cochera de roble
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] Productos: 8
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "1 POLLO",
+        "precio": 50,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 13,
+        "nombre": "1 POLLO - PROMO CUMPLEAÑOS",
+        "precio": 50,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 18,
+        "nombre": "CHAUFA A LO POBRE",
+        "precio": 15,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 23,
+        "nombre": "Inka-Cola 1.5lt",
+        "precio": 9,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 14,
+        "nombre": "CHAUFA C\/ POLLO",
+        "precio": 11,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 17,
+        "nombre": "CHAUFA C\/ LANGOSTINOS",
+        "precio": 18,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 26,
+        "nombre": "Porción de arroz chaufa",
+        "precio": 7,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 28,
+        "nombre": "Porción de ensalada",
+        "precio": 6,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 10,
+    "nombre": "Reyhan"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Número de pedido generado: PED-2025-495779
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "delivery",
+    "direccion_final": "Calle Tambo Viejo, Vírgen Inmaculada Concepción, Cieneguilla, Lima, Lima Metropolitana, Lima, Perú, Lima. Ref: Casa blanca con cochera de roble",
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "38",
+    "nro": "PED-2025-495779"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "tarjeta",
+    "id_metodo_pago": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "16",
+    "nro_venta": 9,
+    "id_metodo_pago": 2,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "16"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 8
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "38",
+    "nro_pedido": "PED-2025-495779",
+    "cliente_id": 10,
+    "total": 171,
+    "productos": 8
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:40:21] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] === INICIO procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] Método HTTP: POST
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] IP Cliente: 38.250.148.72
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] Conectando a BD: allwiya_allwiya_gustavo en 127.0.0.1
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Conexión a BD exitosa
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] Validando tabla tb_estados...
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Tabla tb_estados OK - Estado PENDIENTE existe
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] Raw input recibido (primeros 500 chars)
+                      Datos: "{\"tipo_pedido\":\"delivery\",\"cliente\":{\"nombre\":\"Reyhan\",\"telefono\":\"920572674\",\"direccion\":\"Calle Tambo Nuevo, Cieneguilla, Lima, Lima Metropolitana, Lima, Perú, Lima. Ref: Casa blanca con cochera de roble\",\"mesa\":null,\"email\":null},\"productos\":[{\"id\":4,\"nombre\":\"1 POLLO\",\"precio\":50,\"cantidad\":1,\"observaciones\":null},{\"id\":12,\"nombre\":\"1 POLLO - OFERTA 4\",\"precio\":70,\"cantidad\":1,\"observaciones\":null},{\"id\":7,\"nombre\":\"1\/8 POLLO\",\"precio\":12,\"cantidad\":1,\"observaciones\":null},{\"id\":21,\"nombre\":"
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ JSON decodificado correctamente
+                      Datos: [
+    "tipo_pedido",
+    "cliente",
+    "productos",
+    "metodo_pago",
+    "observaciones",
+    "subtotal",
+    "descuento",
+    "costo_delivery",
+    "total"
+]
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] Cliente: Reyhan, Tel: 920572674, Dir: Calle Tambo Nuevo, Cieneguilla, Lima, Lima Metropolitana, Lima, Perú, Lima. Ref: Casa blanca con cochera de roble
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] Tipo pedido: delivery
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] Productos: 5
+                      Datos: [
+    {
+        "id": 4,
+        "nombre": "1 POLLO",
+        "precio": 50,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 12,
+        "nombre": "1 POLLO - OFERTA 4",
+        "precio": 70,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 7,
+        "nombre": "1\/8 POLLO",
+        "precio": 12,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 21,
+        "nombre": "CALDO DE GALLINA C\/ PRESA GRANDE",
+        "precio": 15,
+        "cantidad": 1,
+        "observaciones": null
+    },
+    {
+        "id": 19,
+        "nombre": "CALDO DE GALLINA C\/PRESA CHICA",
+        "precio": 10,
+        "cantidad": 1,
+        "observaciones": null
+    }
+]
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Cliente existente encontrado
+                      Datos: {
+    "id": 10,
+    "nombre": "Reyhan"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] === INICIANDO TRANSACCIÓN ===
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Número de pedido generado: PED-2025-495780
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Método de pago seleccionado: tarjeta
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Validaciones finales
+                      Datos: {
+    "tipo_pedido": "delivery",
+    "direccion_final": "Calle Tambo Nuevo, Cieneguilla, Lima, Lima Metropolitana, Lima, Perú, Lima. Ref: Casa blanca con cochera de roble",
+    "mesa_final": null,
+    "metodo_pago": "tarjeta"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Pedido creado en BD
+                      Datos: {
+    "id": "39",
+    "nro": "PED-2025-495780"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Método de pago mapeado
+                      Datos: {
+    "metodo_texto": "tarjeta",
+    "id_metodo_pago": 2
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Venta creada (pendiente)
+                      Datos: {
+    "id_venta": "17",
+    "nro_venta": 10,
+    "id_metodo_pago": 2,
+    "estado": "pendiente"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Detalles de venta insertados
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Pedido vinculado con venta
+                      Datos: {
+    "id_venta": "17"
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] ✓ Detalles del pedido insertados y stock actualizado
+                      Datos: {
+    "items": 5
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] === ✅ PEDIDO COMPLETADO EXITOSAMENTE ===
+                      Datos: {
+    "id_pedido": "39",
+    "nro_pedido": "PED-2025-495780",
+    "cliente_id": 10,
+    "total": 162,
+    "productos": 5
+}
+--------------------------------------------------------------------------------
+[2025-12-10 01:42:36] [INFO] === FIN procesar_pedido_directo.php ===
+--------------------------------------------------------------------------------

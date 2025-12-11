@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Mapa de Pedidos</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2196f3;
+        }
+
+        #mapContainer {
+            height: 400px;
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #ff3d00;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #ff3d00 0%, #ffc107 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .result {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .result.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🗺️ Test del Mapa de Pedidos</h1>
+        <p style="color: #666; margin-bottom: 20px;">Prueba de funcionalidad del mapa interactivo</p>
+
+        <div class="info">
+            <strong>📍 Instrucciones:</strong>
+            <ul style="margin-left: 20px; margin-top: 5px;">
+                <li>Haz clic en cualquier parte del mapa para seleccionar una ubicación</li>
+                <li>Arrastra el marcador azul para ajustar la posición</li>
+                <li>La dirección se completará automáticamente</li>
+            </ul>
+        </div>
+
+        <!-- Mapa -->
+        <div id="mapContainer"></div>
+
+        <!-- Formulario -->
+        <div class="form-group">
+            <label>📍 Dirección Completa</label>
+            <input type="text" id="direccionEntrega" placeholder="Usa el mapa para seleccionar" readonly>
+        </div>
+
+        <div class="form-group">
+            <label>🏢 Referencia</label>
+            <input type="text" id="referenciaEntrega" placeholder="Ej: Casa azul, al frente del parque">
+        </div>
+
+        <div class="form-group">
+            <label>🏙️ Distrito</label>
+            <select id="distritoEntrega">
+                <option value="">Selecciona distrito...</option>
+                <option value="Ate">Ate</option>
+                <option value="Santa Anita">Santa Anita</option>
+                <option value="La Molina">La Molina</option>
+                <option value="San Luis">San Luis</option>
+                <option value="El Agustino">El Agustino</option>
+                <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+            </select>
+        </div>
+
+        <button class="btn" onclick="mostrarDatos()">✅ Verificar Datos</button>
+
+        <div class="result" id="resultado">
+            <h3 style="margin-bottom: 10px;">Datos Capturados:</h3>
+            <pre id="datosJSON" style="background: #fff; padding: 10px; border-radius: 4px; overflow-x: auto;"></pre>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // Coordenadas de Lima
+        const LIMA_COORDS = [-12.046374, -77.042793];
+        let map, marker;
+
+        // Inicializar mapa
+        function initMapa() {
+            // Crear mapa centrado en Lima
+            map = L.map('mapContainer').setView(LIMA_COORDS, 13);
+
+            // Agregar capa de OpenStreetMap
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Crear marcador arrastrable
+            marker = L.marker(LIMA_COORDS, {
+                draggable: true
+            }).addTo(map);
+
+            // Popup inicial
+            marker.bindPopup("<b>Arrastra este marcador</b><br>o haz clic en el mapa").openPopup();
+
+            // Al terminar de arrastrar
+            marker.on('dragend', function (e) {
+                const position = marker.getLatLng();
+                getAddressFromCoords(position.lat, position.lng);
+            });
+
+            // Al hacer clic en el mapa
+            map.on('click', function (e) {
+                marker.setLatLng(e.latlng);
+                getAddressFromCoords(e.latlng.lat, e.latlng.lng);
+            });
+
+            // Intentar geolocalización
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const userLat = position.coords.latitude;
+                        const userLng = position.coords.longitude;
+                        const userLocation = new L.LatLng(userLat, userLng);
+
+                        map.setView(userLocation, 15);
+                        marker.setLatLng(userLocation);
+                        marker.setPopupContent("<b>Tu ubicación actual</b>").openPopup();
+
+                        getAddressFromCoords(userLat, userLng);
+                    },
+                    () => {
+                        console.log("Geolocalización no permitida");
+                    }
+                );
+            }
+        }
+
+        // Geocoding inverso (coordenadas -> dirección)
+        async function getAddressFromCoords(lat, lng) {
+            const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`;
+
+            try {
+                document.getElementById('direccionEntrega').value = "Buscando dirección...";
+
+                const response = await fetch(url, {
+                    headers: { 'Accept-Language': 'es' }
+                });
+                const data = await response.json();
+
+                if (data && data.address) {
+                    const direccionCompleta = data.display_name;
+                    document.getElementById('direccionEntrega').value = direccionCompleta;
+
+                    // Extraer distrito
+                    const distrito = data.address.city_district ||
+                        data.address.suburb ||
+                        data.address.neighbourhood || '';
+
+                    // Seleccionar distrito si está en la lista
+                    const selectDistrito = document.getElementById('distritoEntrega');
+                    const opciones = Array.from(selectDistrito.options);
+                    const opcionEncontrada = opciones.find(opt =>
+                        distrito.toLowerCase().includes(opt.value.toLowerCase())
+                    );
+
+                    if (opcionEncontrada) {
+                        selectDistrito.value = opcionEncontrada.value;
+                    }
+
+                    // Actualizar popup
+                    marker.setPopupContent(`<b>${distrito || 'Ubicación'}</b><br>${direccionCompleta.substring(0, 50)}...`).openPopup();
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                document.getElementById('direccionEntrega').value = "Error al obtener dirección";
+            }
+        }
+
+        // Mostrar datos capturados
+        function mostrarDatos() {
+            const datos = {
+                direccion: document.getElementById('direccionEntrega').value,
+                referencia: document.getElementById('referenciaEntrega').value,
+                distrito: document.getElementById('distritoEntrega').value,
+                coordenadas: marker ? marker.getLatLng() : null
+            };
+
+            document.getElementById('datosJSON').textContent = JSON.stringify(datos, null, 2);
+            document.getElementById('resultado').classList.add('show');
+        }
+
+        // Iniciar al cargar
+        document.addEventListener('DOMContentLoaded', initMapa);
+    </script>
+</body>
+
+</html>

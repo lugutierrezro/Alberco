@@ -1,0 +1,474 @@
+// PEDIDO MEJORADO - Versión corregida con validación de tipo de pedido y mapa
+let direccionesGuardadas = [];
+let costoDelivery = 0;
+let tipoSeleccionado = '';
+let direccionSeleccionada = null;
+let map = null;
+let marker = null;
+
+// Coordenadas de Lima (punto central)
+const LIMA_COORDS = [-12.046374, -77.042793];
+
+document.addEventListener('DOMContentLoaded', () => {
+    initPedido();
+    displayCartItems();
+    updateCartSummary();
+});
+
+function initPedido() {
+    // Listener para tipo de pedido
+    document.querySelectorAll('[name="tipoPedido"]').forEach(radio => {
+        radio.addEventListener('change', function () {
+            // Guardar el tipo seleccionado
+            tipoSeleccionado = this.value;
+            console.log('Tipo seleccionado:', tipoSeleccionado);
+            handleTipoPedido(this.value);
+        });
+    });
+
+    // Listener para método de pago
+    document.querySelectorAll('[name="metodoPago"]').forEach(radio => {
+        radio.addEventListener('change', function () {
+            console.log('Método de pago seleccionado:', this.value);
+        });
+    });
+
+    // Vaciar carrito
+    const btnVaciar = document.getElementById('vaciarCarrito');
+    if (btnVaciar) {
+        btnVaciar.addEventListener('click', (e) => {
+            e.preventDefault();
+            Swal.fire({
+                title: '¿Vaciar carrito?',
+                text: 'Se eliminarán todos los productos',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Sí, vaciar',
+                cancelButtonText: 'Cancelar'
+            }).then(result => {
+                if (result.isConfirmed) {
+                    clearCart();
+                    displayCartItems();
+                    updateCartSummary();
+                }
+            });
+        });
+    }
+
+    // Submit del formulario
+    document.getElementById('formPedido').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        await procesarPedido();
+    });
+}
+
+function displayCartItems() {
+    const container = document.getElementById('carritoContainer');
+    const cart = getCart();
+
+    if (!cart || cart.length === 0) {
+        container.innerHTML = `
+            <div class="text-center p-5">
+                <i class="fas fa-shopping-cart fa-4x text-muted mb-3"></i>
+                <h5 class="text-muted">Tu carrito está vacío</h5>
+                <a href="menu.php" class="btn-modern btn-primary mt-3">
+                    <i class="fas fa-utensils me-2"></i>Ver Menú
+                </a>
+            </div>
+        `;
+        return;
+    }
+
+    let html = '';
+    cart.forEach(item => {
+        const subtotal = item.precio * item.cantidad;
+        const imagen = item.imagen || '../Assets/imagenes/no-image.svg';
+
+        html += `
+            <div class="cart-item-modern">
+                <img src="${imagen}" alt="${item.nombre}" class="cart-item-image" 
+                     onerror="this.src='../Assets/imagenes/no-image.svg'">
+                <div class="cart-item-info">
+                    <div class="cart-item-name">${item.nombre}</div>
+                    <div class="cart-item-price">S/ ${item.precio.toFixed(2)}</div>
+                    <div class="mt-2">
+                        <div class="input-group input-group-sm" style="max-width: 150px;">
+                            <button class="btn btn-outline-danger" onclick="cambiarCantidad(${item.id}, -1)">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="text" class="form-control text-center fw-bold" 
+                                   value="${item.cantidad}" readonly>
+                            <button class="btn btn-outline-success" onclick="cambiarCantidad(${item.id}, 1)">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-end">
+                    <div class="fw-bold text-primary mb-2">S/ ${subtotal.toFixed(2)}</div>
+                    <button class="btn btn-danger btn-sm" onclick="eliminarProducto(${item.id})" title="Eliminar">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
+}
+
+function cambiarCantidad(id, cambio) {
+    const cart = getCart();
+    const item = cart.find(i => i.id === id);
+
+    if (item) {
+        const nuevaCantidad = item.cantidad + cambio;
+        if (nuevaCantidad > 0) {
+            updateQuantity(id, nuevaCantidad);
+            displayCartItems();
+            updateCartSummary();
+        } else {
+            eliminarProducto(id);
+        }
+    }
+}
+
+function eliminarProducto(id) {
+    removeFromCart(id);
+    displayCartItems();
+    updateCartSummary();
+}
+
+function handleTipoPedido(tipo) {
+    const seccionDireccion = document.getElementById('seccionDireccion');
+    const seccionMesa = document.getElementById('seccionMesa');
+
+    if (tipo === 'delivery') {
+        seccionDireccion.style.display = 'block';
+        seccionMesa.style.display = 'none';
+
+        // Inicializar mapa si no existe
+        setTimeout(() => {
+            if (!map) {
+                initMapa();
+            }
+        }, 300);
+
+        // Calcular costo de delivery (ejemplo: S/ 5.00)
+        costoDelivery = 5.00;
+    } else if (tipo === 'mesa') {
+        seccionDireccion.style.display = 'none';
+        seccionMesa.style.display = 'block';
+        costoDelivery = 0;
+    } else {
+        // Para llevar
+        seccionDireccion.style.display = 'none';
+        seccionMesa.style.display = 'none';
+        costoDelivery = 0;
+    }
+
+    updateCartSummary();
+}
+
+// Inicializar mapa Leaflet
+function initMapa() {
+    const mapContainer = document.getElementById('mapContainer');
+    if (!mapContainer) return;
+
+    // Crear mapa centrado en Lima
+    map = L.map('mapContainer').setView(LIMA_COORDS, 15);
+
+    // Capa de OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Crear marcador arrastrable
+    marker = L.marker(LIMA_COORDS, {
+        draggable: true
+    }).addTo(map);
+
+    // Al arrastrar el marcador
+    marker.on('dragend', function (e) {
+        const position = marker.getLatLng();
+        getAddressFromCoords(position.lat, position.lng);
+    });
+
+    // Al hacer clic en el mapa
+    map.on('click', function (e) {
+        marker.setLatLng(e.latlng);
+        getAddressFromCoords(e.latlng.lat, e.latlng.lng);
+    });
+
+    // Intentar geolocalización
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const userLat = position.coords.latitude;
+                const userLng = position.coords.longitude;
+                const newLatLng = new L.LatLng(userLat, userLng);
+
+                map.setView(newLatLng, 16);
+                marker.setLatLng(newLatLng);
+                getAddressFromCoords(userLat, userLng);
+            },
+            () => {
+                console.log("Geolocalización no permitida");
+            }
+        );
+    }
+}
+
+// Obtener dirección desde coordenadas (Geocoding inverso)
+async function getAddressFromCoords(lat, lng) {
+    const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`;
+
+    try {
+        const response = await fetch(url, {
+            headers: { 'Accept-Language': 'es' }
+        });
+        const data = await response.json();
+
+        if (data && data.address) {
+            const direccionCompleta = data.display_name;
+
+            // Llenar el input de dirección
+            document.getElementById('direccionEntrega').value = direccionCompleta;
+
+            // Extraer distrito
+            const distrito = data.address.city_district || data.address.suburb ||
+                data.address.neighbourhood || '';
+
+            // Seleccionar el distrito si existe en el select
+            const selectDistrito = document.getElementById('distritoEntrega');
+            const opcionDistrito = Array.from(selectDistrito.options).find(
+                opt => opt.value.toLowerCase().includes(distrito.toLowerCase())
+            );
+
+            if (opcionDistrito) {
+                selectDistrito.value = opcionDistrito.value;
+            }
+
+            // Calcular costo según distrito
+            await calcularDeliveryPorDistrito(selectDistrito.value);
+        }
+    } catch (error) {
+        console.error("Error obteniendo dirección:", error);
+    }
+}
+
+// Calcular delivery según distrito
+async function calcularDeliveryPorDistrito(distrito) {
+    // Lógica simple de costos (puedes ampliarla)
+    const costosDistrito = {
+        'Ate': 5.00,
+        'Santa Anita': 5.00,
+        'La Molina': 8.00,
+        'San Luis': 6.00,
+        'El Agustino': 4.00,
+        'San Juan de Lurigancho': 7.00
+    };
+
+    costoDelivery = costosDistrito[distrito] || 5.00;
+    updateCartSummary();
+
+    Swal.fire({
+        icon: 'info',
+        title: `Costo de Delivery: S/ ${costoDelivery.toFixed(2)}`,
+        toast: true,
+        position: 'top-end',
+        timer: 2000,
+        showConfirmButton: false
+    });
+}
+
+function updateCartSummary() {
+    const cart = getCart();
+    const subtotal = cart.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
+    const total = subtotal + costoDelivery;
+
+    document.getElementById('subtotalResumen').textContent = 'S/ ' + subtotal.toFixed(2);
+    document.getElementById('deliveryResumen').textContent = 'S/ ' + costoDelivery.toFixed(2);
+    document.getElementById('totalResumen').textContent = 'S/ ' + total.toFixed(2);
+}
+
+async function procesarPedido() {
+    // Validar que se haya seleccionado un tipo de pedido
+    const tipoRadio = document.querySelector('[name="tipoPedido"]:checked');
+    if (!tipoRadio) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Por favor selecciona un tipo de pedido'
+        });
+        return;
+    }
+
+    // Actualizar la variable tipoSeleccionado por si acaso
+    tipoSeleccionado = tipoRadio.value;
+
+    // Validar carrito
+    const cart = getCart();
+    if (!cart || cart.length === 0) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Carrito vacío',
+            text: 'Agrega productos antes de realizar el pedido'
+        });
+        return;
+    }
+
+    // Validar dirección SOLO si es delivery
+    if (tipoSeleccionado === 'delivery') {
+        const direccion = document.getElementById('direccionEntrega')?.value.trim() || '';
+        const distrito = document.getElementById('distritoEntrega')?.value || '';
+
+        if (!direccion && !distrito) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Dirección recomendada',
+                text: 'Para delivery es mejor ingresar la dirección. ¿Deseas continuar sin dirección?',
+                showCancelButton: true,
+                confirmButtonText: 'Sí, continuar',
+                cancelButtonText: 'No, agregar dirección'
+            }).then((result) => {
+                if (!result.isConfirmed) {
+                    return;
+                }
+            });
+        }
+    }
+
+    // Validar mesa si es local
+    if (tipoSeleccionado === 'mesa') {
+        const mesa = document.getElementById('numeroMesa').value;
+        if (!mesa) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Mesa no seleccionada',
+                text: 'Por favor selecciona una mesa'
+            });
+            return;
+        }
+    }
+
+    // Validar método de pago
+    const metodoPago = document.querySelector('[name="metodoPago"]:checked');
+    if (!metodoPago) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Método de pago',
+            text: 'Por favor selecciona un método de pago'
+        });
+        return;
+    }
+
+    // Preparar datos del pedido
+    const subtotal = cart.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
+    const total = subtotal + costoDelivery;
+
+    const pedido = {
+        cliente: {
+            nombre: document.getElementById('nombreCliente').value,
+            telefono: document.getElementById('telefonoCliente').value,
+            direccion: tipoSeleccionado === 'delivery' ?
+                document.getElementById('direccionEntrega').value : '',
+            referencia: tipoSeleccionado === 'delivery' ?
+                document.getElementById('referenciaEntrega').value : ''
+        },
+        tipo_pedido: tipoSeleccionado,
+        metodo_pago: metodoPago.value,
+        observaciones: document.getElementById('observaciones').value || '',
+        productos: cart,
+        distrito: tipoSeleccionado === 'delivery' ?
+            document.getElementById('distritoEntrega').value : '',
+        costo_delivery: costoDelivery,
+        subtotal: subtotal,
+        total: total,
+        mesa_id: tipoSeleccionado === 'mesa' ?
+            document.getElementById('numeroMesa').value : null
+    };
+
+    // Mostrar loading
+    Swal.fire({
+        title: 'Procesando pedido...',
+        text: 'Por favor espera',
+        allowOutsideClick: false,
+        didOpen: () => Swal.showLoading()
+    });
+
+    try {
+        // Construir la URL correcta según el entorno
+        const baseUrl = typeof APP_CONFIG !== 'undefined' ? APP_CONFIG.SALES_URL_BASE : '';
+        // USAR VERSIÓN DIRECTA que evita problema de sesión
+        const procesarUrl = baseUrl ? `${baseUrl}/Vista/procesar_pedido_directo.php` : 'procesar_pedido_directo.php';
+
+        console.log('Enviando pedido a:', procesarUrl);
+        console.log('Datos del pedido:', pedido);
+
+        // Timeout de 30 segundos
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 30000);
+
+        const response = await fetch(procesarUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(pedido),
+            signal: controller.signal
+        });
+
+        clearTimeout(timeoutId);
+
+        console.log('Response status:', response.status);
+        console.log('Response headers:', response.headers.get('content-type'));
+
+        // Verificar si la respuesta es JSON
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+            const text = await response.text();
+            console.error('Respuesta no es JSON:', text);
+            throw new Error('El servidor no respondió correctamente. Ver consola para detalles.');
+        }
+
+        const result = await response.json();
+        console.log('Respuesta del servidor:', result);
+
+        if (result.success) {
+            // Limpiar carrito
+            clearCart();
+
+            Swal.fire({
+                icon: 'success',
+                title: '¡Pedido confirmado!',
+                html: `<p>Tu pedido <strong>#${result.id_pedido || result.nro_pedido}</strong> ha sido registrado</p>`,
+                confirmButtonText: 'Aceptar'
+            }).then(() => {
+                // Recargar la página o redirigir
+                window.location.reload();
+            });
+        } else {
+            throw new Error(result.mensaje || result.error || 'Error al procesar el pedido');
+        }
+    } catch (error) {
+        console.error('Error completo:', error);
+
+        let mensaje = 'Error al procesar el pedido';
+        if (error.name === 'AbortError') {
+            mensaje = 'La solicitud tomó demasiado tiempo. Por favor intenta de nuevo.';
+        } else if (error.message) {
+            mensaje = error.message;
+        }
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: mensaje
+        });
+    }
+}
+
+// Exponer funciones globalmente
+window.cambiarCantidad = cambiarCantidad;
+window.eliminarProducto = eliminarProducto;
