@@ -1,0 +1,168 @@
+{
+    "timestamp": "2025-12-10 15:38:02",
+    "summary": {
+        "total_tests": 17,
+        "passed": 0,
+        "failed": 17,
+        "success_rate": 0
+    },
+    "tests": [
+        {
+            "test": "AUTH-001",
+            "description": "Login con credenciales inválidas (debe fallar)",
+            "passed": false,
+            "duration_ms": 7.18,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "AUTH-002",
+            "description": "Login sin email (debe fallar)",
+            "passed": false,
+            "duration_ms": 1.03,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "AUTH-003",
+            "description": "Login sin password (debe fallar)",
+            "passed": false,
+            "duration_ms": 0.92,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "PEDIDOS-001",
+            "description": "Listar todos los pedidos activos",
+            "passed": false,
+            "duration_ms": 0.93,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "PEDIDOS-002",
+            "description": "Listar pedidos de cocina",
+            "passed": false,
+            "duration_ms": 1.3,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "PEDIDOS-003",
+            "description": "Listar pedidos por estado específico (id=1)",
+            "passed": false,
+            "duration_ms": 0.84,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "DELIVERY-001",
+            "description": "Listar pedidos sin ID de empleado (debe fallar)",
+            "passed": false,
+            "duration_ms": 0.88,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "DELIVERY-002",
+            "description": "Listar pedidos con ID de empleado válido",
+            "passed": false,
+            "duration_ms": 0.91,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "DELIVERY-003",
+            "description": "Listar pedidos con ID de empleado inexistente",
+            "passed": false,
+            "duration_ms": 0.78,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "DETALLE-001",
+            "description": "Obtener detalle sin ID de pedido (debe fallar)",
+            "passed": false,
+            "duration_ms": 0.95,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "DETALLE-002",
+            "description": "Obtener detalle de pedido inexistente (debe fallar)",
+            "passed": false,
+            "duration_ms": 1,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "ESTADO-001",
+            "description": "Cambiar estado sin datos (debe fallar)",
+            "passed": false,
+            "duration_ms": 1.4,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "ESTADO-002",
+            "description": "Cambiar estado sin estado_id (debe fallar)",
+            "passed": false,
+            "duration_ms": 1.18,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "ESTADO-003",
+            "description": "Cambiar estado de pedido inexistente (debe fallar)",
+            "passed": false,
+            "duration_ms": 0.86,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "TRACKING-001",
+            "description": "Actualizar ubicación sin datos (debe fallar)",
+            "passed": false,
+            "duration_ms": 0.89,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "TRACKING-002",
+            "description": "Actualizar ubicación sin coordenadas (debe fallar)",
+            "passed": false,
+            "duration_ms": 22.18,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        },
+        {
+            "test": "TRACKING-003",
+            "description": "Actualizar ubicación de pedido inexistente (debe fallar)",
+            "passed": false,
+            "duration_ms": 0.99,
+            "http_code": 404,
+            "message": "HTTP 404 - Esperado 200",
+            "response": null
+        }
+    ],
+    "recommendations": [
+        "⚠️  Alta tasa de fallos detectada. Revisar configuración de base de datos.",
+        "✅ Tiempo de respuesta promedio aceptable (2.6ms)."
+    ]
+}
